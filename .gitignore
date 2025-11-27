@@ -1,0 +1,4 @@
+*.xlsx
+*.mp4
+__pycache__/
+.vscode/

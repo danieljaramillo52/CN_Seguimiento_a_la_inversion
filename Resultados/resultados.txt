@@ -1,0 +1,12 @@
+Se requieren crear las carpetas de resultados, previo a ejecutar la automatización: 
+
+
+Resultados/
+├── Plantilla_1/
+├── Plantilla_2/
+├── Plantilla_3/
+├── Plantilla_4/
+├── Plantilla_5/
+└── Plantilla_6/
+├── Plantilla_7/
+└── Plantilla_8/

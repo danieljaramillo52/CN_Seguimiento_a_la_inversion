@@ -1,0 +1,945 @@
+# Archivo de configuración para el proceso de Seguimiento a la inversión,
+
+# Se debe escribir si/no dependiendo de si nos interesa sacar el trimestre o no. 
+
+hay_trim: "no" 
+
+#"Ingrese la abreviatura del mes actual:
+# Abreviaturas x mes(Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic): "
+mes_act : Ago 
+
+
+
+path: 
+  Insumos: Insumos/Parte1/Plantilla_1/
+  Insumos_P2: Insumos/Parte2/
+  Insumos_P3: Insumos/Parte3/
+  Insumos_P4: Insumos/Parte4/
+  Insumos_P6: Insumos/Parte6/
+  #Parte 7 no requiere insumos adicionales. Directamente toda la información está ya disponible.
+
+  Resultados: 
+    RESULTADOS_P1: Resultados/Plantilla_1/
+    RESULTADOS_P2: Resultados/Plantilla_2/
+    RESULTADOS_P3: Resultados/Plantilla_3/
+    RESULTADOS_P4: Resultados/Plantilla_4/
+    RESULTADOS_P6: Resultados/Plantilla_6/
+    RESULTADOS_P7: Resultados/Plantilla_7/
+
+  Drivers: Drivers/
+  BasesBO: Insumos/Parte1/InsumosBO
+
+
+RUTAS_INSUMOS : {Insumos: Insumos/Parte1/Actual/,
+  Insumos_P2: Insumos/Parte2/,
+  Insumos_P3: Insumos/Parte3/,
+  Insumos_P4: Insumos/Parte4/,
+  Insumos_P6: Insumos/Parte6/, 
+}
+
+#Ingresar el porcentaje en formato decimal.
+#Ejemplos: 
+# 10% = 0.10 
+# 5% = 0.05
+# 29% = 0.29
+# 2% = 0.02 
+PORCENTAJE_VENTAS_CONTADO_P6 : 0.01
+
+# Glosario de constantes
+# Rutas y ubicaciones
+PATH: "path"
+# Constantes Lectura Maestras, socios, bibla, estructura.
+ACTIVOS: "Activos"
+INACTIVOS: "Inactivos" 
+FILE_NAME: "file_name"
+COLS: "cols"
+COLS_NECESARIAS: "cols_necesarias"
+COLS_SELECCIONAR_AFOS_P3: "cols_seleccionar_afos_p3"
+RENOMBRAR_COLS : "renombrar_cols"
+RENOMBRAR_COLS_PIE_FACTURA : "renombrar_cols_pie_factura"
+SHEET: "sheet"
+NUM_SHEET: "num_sheet"
+REORDENAR_COLUMNAS: "reordenar_cols"
+FILTRAR_SOCIOS: "filtrar_socios"
+REEMPLAZOS_SOCIOS: "reemplazos_socios"
+REEMPLAZOS_BIBLIA: "reemplazos_biblia"
+
+
+#Drivers
+NOM_DRIVER_GENERADO: "Drivers_automatizacion.xlsx"
+NOM_DRIVER_USUARIO: "Drivers_usuario.xlsx"
+
+DRIVERS_GENERADOS:
+  ["Clientes_Plan_de_Negocios",
+    "Clientes_Socios",
+    "Nombre_figura_comercial",
+    "Cods_JV_y_RV",
+    "Estructura_de_Ventas",
+    "Cliente_Nit_maestra",
+    "Clientes_medibles"
+  ]
+
+DRIVERS_USUARIO : 
+  ["Dcto_Condicionados_x_Concepto",
+  "Jerarquia_Cadenas",
+  "Region",
+  "Jerarquia_Comercial",
+  "KAM_x_Formato_Region",
+  "Escalas",
+  "Driver cecos y conceptos",
+  "Driver de segmento",
+  "Driver dcto envio directo"
+  ]
+
+dict_constantes : {
+  JER_COMER : "Jerarquia_Comercial" } 
+
+#Nombres de los archivos para acceder en Insumos e Insumos parte2. 
+# Socios
+SOCIOS: "Socio"
+# Biblia
+BIBLIA: "Biblia"
+# Estructura Ventas
+ESTRUCTURA_VENTAS: "Estructura_Ventas"
+# BO Acumulado
+BO_ACUMULADO: "BO_Sto_Inver_Acum"
+# BO Trimestre
+BO_TRIMESTRE: "BO_Sto_Inver_Trim"
+# BO Mes
+BO_MES: "BO_Sto_Inver_Mes"
+#Afo consul inv clientes.
+AFO_CONSUL_INV: "Afo_consulta_inversion_cliente"
+#Historico de gastos.
+HISTORI_BD_GASTOS: "HistoricoBDGastos"
+#Bd clientes mes anterior
+BD_CLIENTES_MES_ANT: "BD_Clientes_Mes_Ant"
+
+
+
+COLS_DRIVER_EV_NFC: cols_driver_Nombre_Figura_Comercial
+COLS_DRIVER_EV_EV: "cols_driver_Estructura_de_Ventas"
+
+#Valores constantes comunes 
+FIL_SIN_ASIG: "Sin asignar"
+FIL_NUMERAL: "#"
+FIL_NO : "No"
+FIL_GUION : "-"
+
+# Columnas posibles necesarias de los dataframes.
+MES: "Mes"
+MES_ORIG: "Mes Orig."
+NIT: "Nit"
+CANAL: "Canal"
+SUBCANAL: "Subcanal"
+SUB_CANAL: "Sub Canal"
+SUB_CANAL_1: "Sub Canal 1."
+N_CLIENTE: "N_cliente"
+N_IDENT_FI: "N ident fi"
+ESTADO: "Estado"
+CLIENTE: "Cliente"
+COD_CLI: "Cod. Cl"
+COD_CLI_ORIG: "Cod. Cl Orig."
+RAZON_SOCIAL: "Razon Social"
+RAZON_SOCIAL_LOC: "Razon Social Loc."
+RAZON_SOCIAL_ORIG: "Razon Social Orig."
+COD_LOC: "Cod. Loc."
+FUNC_IN: "Funcion in" # Columna que contiene los vendedores, y Jefes de ventas.
+FUNC_IN_SELECCIONADAS: ["Z1", "ZA", "Z6"]
+TIPO_Z6: "Z6"
+TIPO_ZA: "ZA"
+TIPO_Z1: "Z1"
+ATENCION: "Atencion"
+REGION: "Region"
+NIF: "N.I.F."
+DEV_MALAS: Dev. Malas
+ACUERDO: "Acuerdo" 
+ESTADO_FINAL: "Estado Final"
+META: "Meta"
+PERIODO: "Periodo"
+INVERSION: "Inversion"
+BENEFICIO : "Beneficio"
+
+CATEGORIA: "Categoria"
+PLAN_DE_INVERSION: "Plan de Inversion"
+PLAN_DE_NEGOCIO: "Plan de Negocio"
+CODIGO: "Codigo"
+DESCRIPCION_CONCEPTO: "Descripcion Concepto"
+CN_SCN: "Cn - Scn"
+AGRUPACION_ACTUAL: "Agrupacion Actual"
+AGRUPACION_ANTERIOR: "Agrupacion Anterior"
+AGRUPACION_CONCEPTO: "Agrupacion Concepto"
+FORMATO_ORIG: "Formato Orig."
+GRANDES_CADENAS: "Grandes Cadenas"
+AGRUPACION_CLIENTES: "Agrupacion Clientes"
+
+FORMATO: "Formato"
+SEGMENTO: "Segmento"
+COD_OV: "Cod. OV"
+COD_MT: "Cod. Mt"
+OF_DE_VENTAS: "Of. de Ventas"
+REGION: "Region"
+TIPOLOGIA: "Tipologia"
+CLAVE: "Clave"
+CANAL_TIP_AJUST: "Canal Tip. Ajust."
+SUB_CANAL_TIP_AJUST: "Sub Canal Tip. Ajust."
+TIPOLOGIA_AJUST: "Tipologia Ajust."
+CANAL_TRANS: "Canal Trans."
+SUB_CANAL_TRANS: "Sub Canal Trans."
+SEGMENTO_TRANS: "Segmento Trans"
+COD_FC: "Cod. FC"
+NOMBRE_FIGURA_COMERCIAL: "Nombre Figura Comercial"
+
+COD_JV: "Cod. JV"
+COD_RV: "Cod. RV"
+FORMATO: "Formato"
+COD_KAM: "Cod. KAM"
+NOMBRE_KAM: "Nombre KAM"
+VENDEDOR: Vendedor
+VENTA_CONTADO: "Venta Contado"
+NOMBRE_VENDEDOR: "Nombre Vendedor"
+JEFE_VENTAS: Jefe de Ventas
+NOMBRE_JEFE_VENTAS: "Nombre Jefe Ventas"
+REGION: "Region"
+
+OF_DE_VENTAS: "Of. de Ventas"
+CANAL_EST: "Canal Est."
+SUB_CANAL_EST: "Sub Canal Est."
+ESCALAS: "Escalas"
+ESCALA: "Escala"
+CLIENTE: "Cliente"
+NIT: "Nit"
+
+CONSTANTES_EV: {
+  NOM_VENDEDOR_1: "Nombre Vendedor 1.",
+  COD_JEFE_VENTAS: "Cod. Jefe Vtas",
+  NOM_JEFE_VENTAS: "Nombre Jefe Ventas",
+  COD_VENDEDOR: "Cod. Vendedor",
+  NOM_FIGURA_COMER: "Nombre Figura Comercial",
+  COD_FIGURA_COMER: "Cod. FC",
+  SUB_CANAL_1: "Sub Canal 1.",
+  CANAL: "Canal"
+}
+
+Insumos:
+  Activos:
+    file_name: Maestra_de_clientes.xlsx
+    sheet: Activos
+    num_sheet: 1
+    cols: 24  
+    cols_necesarias: ["N_cliente","Cod. Loc.","N ident fi","Canal dist","Grup clien","Grupo clie","Funcion in","Num person"]
+    cols_verificar: ["N_cliente","Cód. Loc.","N ident fi","Canal dist","Grup clien","Grupo clie","Función in","Núm person"]
+
+  Inactivos:
+    file_name: Maestra_de_clientes.xlsx
+    sheet: Inactivos
+    num_sheet: 1
+    cols: 24
+    cols_necesarias: ["N_cliente","Cod. Loc.","N ident fi","Canal dist","Grup clien","Grupo clie","Funcion in","Num person"]
+    cols_verificar: ["N_cliente","Cód. Loc.","N ident fi","Canal dist","Grup clien","Grupo clie","Función in","Núm person"]
+    
+  Socio:
+    file_name: Maestra_socios.xlsm
+    sheet: Consolidado
+    num_sheet: 1
+    cols: 28
+    cols_necesarias: ["Cod_Cliente","Subcanal",Nit Agrupador,"Atencion","Categoria"]
+    cols_verificar: ["Cod_Cliente","Subcanal",Nit Agrupador,"Atención","Categoria"]
+    filtrar_socios: ["Mayoristas", "Superetes", "Minimercados", "Cadenas Regionales"]
+    reemplazos_socios: {
+      "Superetes" : "Autoservicios",
+      "Minimercados" : "Autoservicios", 
+      "Cadenas Regionales" : "Autoservicios"
+    } 
+    renombrar_cols: {
+      "Cod_Cliente" : "Cod. Cl",
+      "Subcanal" : Sub Canal,
+      "Nit Agrupador" : "N.I.F",
+      "Socios" : "Socio"
+    }
+  
+  Estructura_Ventas:
+    file_name: Estructura_de_Ventas.xlsx
+    sheet: Estructura Ventas
+    num_sheet: 1
+    cols: 22
+    cols_necesarias: [
+      "Cod. Vendedor",
+      "Nombre Vendedor 1.",
+      "Cod. Jefe Vtas",
+      "Nombre Jefe Ventas",
+      "Region 1.",
+      "Cod. Of. Vtas.",
+      "Of. de Ventas 1.",
+      "Canal",
+      "Sub Canal 1.",
+    ]
+    cols_verificar: [
+      "Cód. Vendedor",
+      "Nombre Vendedor 1.",
+      "Cód. Jefe Vtas",
+      "Nombre Jefe Ventas",
+      "Región 1.",
+      "Cód. Of. Vtas.",
+      "Of. de Ventas 1.",
+      "Canal",
+      "Sub Canal 1.",
+    ]
+    renombrar_cols: {
+      "Cod. Vendedor": "Cod. RV",
+      "Nombre Vendedor 1.": "Nombre Vendedor",
+      "Cod. Jefe Vtas": "Cod. JV",
+      "Nombre Jefe Ventas": "Nombre Jefe Ventas",
+      "Region 1.": "Region",
+      "Cod. Of. Vtas.": "Cod. OV",
+      "Of. de Ventas 1.": "Of. de Ventas",
+      "Canal": "Canal Est.",
+      "Sub Canal 1.": "Sub Canal Est." ,
+    }
+    cols_driver_Nombre_Figura_Comercial: [
+      "Cod. Jefe Vtas",
+      "Nombre Jefe Ventas",
+      "Cod. Vendedor",
+      "Nombre Vendedor 1."
+    ]
+    
+  Biblia:
+    file_name: Biblia.xlsx
+    sheet: BD
+    num_sheet: 1
+    cols: 87
+    cols_necesarias: ["Cod. Cl","Canal", "Sub Canal", "N.I.F.", "Tipo Inversion"]
+    cols_verificar: ["Cód. Cl","Canal", "Sub Canal", "N.I.F.", "Tipo Inversión", "Cód. Cl Loc.","Acuerdo","Estado Final","Inversión","Periodo","Meta"]
+    cols_necesarias_p7 : ["Mes","Sub Canal", "Cod. Cl Loc.", "Cod. Cl", "Meta", "Inversion","Acuerdo", "Estado Final"]
+    reemplazos_biblia: {
+      "Superetes" : "Autoservicios",
+      "Minimercados" : "Autoservicios", 
+      "Cadenas Regionales" : "Autoservicios"
+    } 
+
+# Archivos para la plantilla numero2. 
+Insumos_P2:
+  Afo_consulta_inversion_cliente:
+    file_name: "Afo_consulta_inversion_cliente.xlsx"
+    sheet: "Hoja1"
+    num_sheet: 1
+    cols: 10
+    renombrar_cols : {
+      "Unnamed: 0" : "Mes",
+      "Unnamed: 1" : "Cod. CeCo",
+      "Unnamed: 2" : "Centro de Costos",
+      "Unnamed: 3" : "Cod. OV Orig.",
+      "Unnamed: 4" : "Oficina de Ventas Orig.",
+      "Unnamed: 5" : "Cod. Sc",
+      "Unnamed: 6" : "Sub Canal Tip. Orig.",
+      "Unnamed: 7" : "Cod. Cl Orig.",
+      "Unnamed: 8" : "Razon Social Orig.",
+      "Real" : "Real Act.",
+    }
+
+  HistoricoBDGastos:
+    file_name: "HistoricoBDGastos.xlsx"
+    sheet: "HistoricoBDGastos"
+    num_sheet: 1
+    cols: 10
+
+  BD_Clientes_Mes_Ant:
+    file_name: "BD_Clientes_Mes_Ant.xlsx"
+    sheet: "BD_Clientes_Mes_Ant"
+    num_sheet: 1
+    cols: 22
+
+Insumos_P3:
+  AFO_Depuraciones:
+    file_name: "AFO Depuraciones.xlsx"
+    sheet: ["Condicionados", "Pie Factura"]
+    num_sheet: 2
+    cols: [5, 5]
+    renombrar_cols : {
+      "Unnamed: 0" : "Mes",
+      "Unnamed: 1" : "Cod. Cl Orig.",
+      "Unnamed: 2" : "Descuento sombrilla",
+      "Unnamed: 3" : "Descuento concepto",
+      "Dcto Condicionados (SC) Acum Ano Actual $" : "Valor"
+    }
+    renombrar_cols_pie_factura : {
+      "Unnamed: 0" : "Mes",
+      "Unnamed: 1" : "Cod. Cl Orig.",
+      "Unnamed: 2" : "Cod. Cp",
+      "Descuentos Pie de Factura (SC) Acum Ano Actual $" : "Valor"
+    }
+    cols_seleccionar_afos_p3: ["Mes", "Cod. Cl Orig.", "Cod. Cp", "Valor"]
+    
+  P3_Historico:
+    file_name: "P3_Historico.xlsx"
+    sheet: "P3_Historico"
+    num_sheet: 1
+    cols: 7
+
+
+Insumos_P4:
+  BO_Ppto_inverision_cliente:
+    file_name: "Ppto_Inversión_x_Cliente_Acum.xlsx"
+    sheet: "BD - Ventas"
+    num_sheet: 1
+    cols: 29
+
+Insumos_P6:
+  BO_env_direct_cont_devs:
+    file_name: "Envios_Directos_-_Contado_-_Dev._Malas.xlsx"
+    sheet: ["Envíos Directos", "Contado", "Dev. Malas"]
+    cols: [6, 4, 4]
+
+
+DESCUENTO_SOMBRILLA: "Descuento sombrilla"
+DESCUENTO_CONCEPTO : "Descuento concepto"
+DESCUENTO_CONDCIONADOS_SC : "Dcto Condicionados (SC) Acum Año Actual $"   
+
+
+ENVIO_DIRECTO: "Envio Directo"
+COD_CP: "Cod. Cp"
+CODIGO : "Codigo"
+OFICINA_VENTAS : "Oficina de Ventas"
+CN_EST_LOC : "Cn Est. Loc."
+SCN_EST_LOC : "Scn Est. Loc."
+CN_TIP_LOC : "Cn Tip. Loc."
+SCN_TIP_LOC : "Scn Tip. Loc."
+TIP_LOC : "Tip Loc."
+NIF_LOC : "N.I.F Loc."
+RAZON_SOCIAL_LOC : "Razon Social Loc."
+NOMBRE_COMERCIAL_LOC : "Nombre Comercial Loc."
+COD_JV_LOC : "Cod. JV Loc."
+JEFE_VENTAS_LOC : "Jefe de Ventas Loc."
+CN_EST_ORIG : "Cn Est. Orig."
+SCN_EST_ORIG: "Scn Est. Orig."
+CN_TIP_ORIG : "Cn Tip. Orig."
+SCN_TIP_ORIG : "Scn Tip. Orig."
+TIP_ORIG : "Tip. Orig."
+AGRUPACION_CLIENTES_ORIG" : "Agrupacion Clientes Orig."
+FORMATO_ORIG : "Formato Orig."
+NIF_ORIG : "N.I.F Orig."
+RAZON_SOCIAL_ORIG : "Razon Social Orig."
+NOMBRE_COMERCIAL: "Nombre Comercial"
+NOMBRE_COMERCIAL_ORIG : "Nombre Comercial Orig."
+COD_JV_ORIG : "Cod. JV Orig."
+JEFE_VENTAS_ORIGINAL : "Jefe de Ventas Original"
+SECTOR : "Sector"
+SECTOR_1: "Sector_1"
+CANAL_INV: "Canal inv"
+VENTA_$$_ANT : "Venta $$ Ant."
+VENTA_$$_ACT : "Venta $$ Act."
+PPTO_$$ : "Ppto $$"
+DCTO_ACT : "Dcto Act."
+PPTO_DCTO : "Ppto Dcto"
+DCTO_P.F._ANT : "Dcto P.F. Ant."
+DCTO_P.F._ACT : "Dcto P.F. Act."
+DCTO_COND._ANT : "Dcto Cond. Ant."
+DCTO_COND._ACT : "Dcto Cond. Act."
+DCTO_MERC._ANT : "Dcto Merc. Ant."
+DCTO_MERC._ACT : "Dcto Merc. Act."
+DCTO_RAP._ANT : "Dcto Rap. Ant."
+DCTO_RAP._ACT : "Dcto Rap. Act."
+VALOR :  "Valor"
+
+# Columnas drivers:
+NIF: "N.I.F."
+PLAN_DE_INVERSION: "Plan de Inversion"
+CODIGO: "Codigo"
+CN_SCN: "Cn - Scn"
+AGRUPACION_ACTUAL: "Agrupacion Actual"
+AGRUPACION_ANTERIOR: "Agrupacion Anterior"
+FORMATO_ORIG: "Formato Orig."
+AGRUPACION_CLIENTES: "Agrupacion Clientes"
+FORMATO: "Formato"
+SEGMENTO: "Segmento"
+OF_DE_VENTAS: "Of. de Ventas"
+CANAL_TIP: "Canal Tip."
+SUB_CANAL_TIP: "Sub Canal Tip."
+TIPOLOGIA: "Tipologia"
+CLAVE: "Clave"
+SUB_CANAL_TIP_ORIG: "Sub Canal Tip. Orig."
+CANAL_TRANS: "Canal Trans."
+SUB_CANAL_TRANS: "Sub Canal Trans."
+SEGMENTO_TRANS: "Segmento Trans"
+COD_FC: "Cod. FC"
+NOMBRE_FIGURA_COMERCIAL: "Nombre Figura Comercial"
+CONCEPTO: "Concepto"
+REAL_ACT: "Real Act."
+COD_CECO: "Cod. CeCo"
+DCTO_ANT: "Dcto Ant."
+
+TIPO_INVERSION: "Tipo Inversion"
+
+CONCATENADAS: ["Concatenada1", "Concatenada2"]
+
+DRIVERS_ADICIONALES : 
+  ["Dcto_Condicionados_x_Concepto",
+  "Jerarquia_Cadenas",
+  "Region",
+  "Jerarquia_Comercial",
+  "KAM_x_Formato_Region"
+  ]
+
+
+COLS_AGRUP_PLANTILLA1_TD_D_CLI: ["Cod. Cl Orig.", "Cod. Cl", "N.I.F.", "Razon Social", "Nombre Comercial", "Cod. JV", "Jefe de Ventas", "Cod. RV", "Vendedor", "Cod. OV", "Oficina de Ventas", "Region", "Canal Est.", "Sub Canal Est.", "Canal Tip.", "Sub Canal Tip.", "Segmento", "Agrupacion Clientes", "Formato", "Plan de Negocio", "Socio", "Escalas","Dcto Ant."]
+
+COLS_AGRUP_PLANTILLA1_TD_VT_DTCOS : ["Mes", "Cod. Cl Orig.", "Cod. Cl","N.I.F.", "Razon Social", "Nombre Comercial", "Cod. JV", "Jefe de Ventas", "Cod. RV", "Vendedor", "Cod. OV", "Oficina de Ventas", "Region", "Canal Est.", "Sub Canal Est.", "Canal Tip.", "Sub Canal Tip.", "Segmento", "Agrupacion Clientes", "Formato", "Plan de Negocio", "Socio", "Escalas"]
+
+COLS_SUM_PLANTILLA1_TD_VD: [
+    "Venta $$ Ant.",
+    "Venta $$ Act.",
+    "Ppto $$",
+    "Dcto Ant.",
+    "Dcto Act.",
+    "Ppto Dcto",
+    "Dcto P.F. Ant.",
+    "Dcto P.F. Act.",
+    "Dcto Cond. Ant.",
+    "Dcto Cond. Act.",
+    "Dcto Merc. Ant.",
+    "Dcto Merc. Act.",
+    "Dcto Rap. Ant.",
+    "Dcto Rap. Act.",
+  ]
+
+
+COLS_AGRUP_CONS_GASTOS: ['Mes', 'Cod. OV Orig.', 'Oficina de Ventas Orig.', 'Sub Canal Tip. Orig.', 'Cod. Cl Orig.', 'Razon Social Orig.']
+
+COLS_AGRUP_CONS_GASTOS_CONCEPTO: ['Mes', 'Cod. OV Orig.', 'Oficina de Ventas Orig.', 'Sub Canal Tip. Orig.', 'Cod. Cl Orig.', 'Razon Social Orig.','Concepto']
+ 
+COLS_AGRUP_PLANT2_P1: ['Mes', 'Cod. OV Orig.', 'Oficina de Ventas Orig.', 'Sub Canal Tip. Orig.', 'Cod. Cl Orig.', 'Razon Social Orig.']
+
+COLS_SUM_PLANT2_P1: ['Reintegro Logistico', 'OIPV + Mercaderismo', 'Trade', 'PAC']
+
+COLS_PARA_MERGE_PLANTILLA_2_FINAL: ["Cod. Cl","N.I.F.", "Razon Social", "Nombre Comercial", "Cod. JV", "Jefe de Ventas", "Cod. RV", "Vendedor", "Cod. OV", "Oficina de Ventas", "Region", "Canal Est.", "Sub Canal Est.", "Canal Tip.", "Sub Canal Tip.", "Segmento", "Agrupacion Clientes", "Formato", "Plan de Negocio", "Socio", "Escalas"]
+
+COLS_AGRUP_PLANTILLA_3_4_TD_NOTAS_CREDITO: ["Mes", "Cod. Cl Orig.", "Cod. Cl", "N.I.F.", "Razon Social","Nombre Comercial", "Cod. JV", "Jefe de Ventas", "Cod. RV", "Vendedor", "Cod. OV", "Oficina de Ventas", "Region", "Canal Est.", "Sub Canal Est.", "Canal Tip.", "Sub Canal Tip.", "Segmento", "Agrupacion Clientes", "Formato","Sector", "Plan de Negocio", "Socio", "Escalas"]
+COLS_AGRUP_PLANTILLA_3_4_TD_NOTAS_CREDITO_AGRUP_CONCEP: ["Mes", "Cod. Cl Orig.", "Cod. Cl","Agrupacion Concepto", "N.I.F.", "Razon Social","Nombre Comercial", "Cod. JV", "Jefe de Ventas", "Cod. RV", "Vendedor", "Cod. OV", "Oficina de Ventas", "Region", "Canal Est.", "Sub Canal Est.", "Canal Tip.", "Sub Canal Tip.", "Segmento", "Agrupacion Clientes", "Formato","Sector","Plan de Negocio", "Socio", "Escalas"]
+
+COLS_FOR_AGRUP_PLN4 : [
+    'Cod. Cl Orig.',
+    'Cod. Cl',
+    'N.I.F.',
+    'Razon Social',
+    'Nombre Comercial',
+    'Cod. JV',
+    'Jefe de Ventas',
+    'Cod. RV',
+    'Vendedor',
+    'Cod. OV',
+    'Oficina de Ventas',
+    'Region',
+    'Canal Est.',
+    'Sub Canal Est.',
+    'Canal Tip.',
+    'Sub Canal Tip.',
+    'Segmento',
+    'Agrupacion Clientes',
+    'Formato',
+    'Negocio',
+    'Plan de Negocio',
+    'Socio',
+    'Sector',
+    'Escalas'
+]
+
+COLS_FOR_SUM_PLN4 : ["Ppto $$", "Ppto Dcto"]
+VALS_FILTRAR_PLAN4: ["Tiendas", "Natural", "Consumo Local"]
+COLS_DUPLICAR_PLN4: {"Ppto $$" : "Ppto $$ Año", "Ppto Dcto" : "Ppto Dctos Año"}
+COLS_FINALES_PLN4: [
+    "Mes",
+    "Cod. Cl Orig.",
+    "Cod. Cl",
+    "N.I.F.",
+    "Razon Social",
+    "Nombre Comercial",
+    "Cod. JV",
+    "Jefe de Ventas",
+    "Cod. RV",
+    "Vendedor",
+    "Cod. OV",
+    "Oficina de Ventas",
+    "Region",
+    "Canal Est.",
+    "Sub Canal Est.",
+    "Canal Tip.",
+    "Sub Canal Tip.",
+    "Segmento",
+    "Agrupacion Clientes",
+    "Formato",
+    "Negocio",
+    "Plan de Negocio",
+    "Socio",
+    "Sector",
+    "Escalas",
+    "Ppto $$ Año",
+    "Ppto Dctos Año",
+]
+
+COLS_RENOMBRAR_PLANTILLA_3_ACT : { "Descripcion Concepto" : "Concepto",
+ "Agrupacion Actual" : "Agrupacion Concepto" , "Ano": Año
+}
+
+MODS_COLS_PLANTILLA_6: {
+    COLS_AGREGAR_PLANTILLA6_CONTADO: {
+        "Cod. Mt": "-",
+        "Descripcion Material": "-",
+        "Venta Env. Dir.": "0",
+        "Devoluciones Malas ME": "0",
+    },
+    COLS_AGREGAR_PLANTILLA6_DEV_MAL: {
+        "Cod. Mt": "-",
+        "Descripcion Material": "-",
+        "Venta Env. Dir.": "0",
+        "Venta Efectiva": "0",
+    },
+    COLS_REORDERNAR_PLANTILLA6_CONT_DEV: [
+        "Mes Nombre",
+        "Codigo Cliente",
+        "Sector",
+        "Venta Efectiva",
+        "Cod. Mt",
+        "Descripcion Material",
+        "Venta Env. Dir.",
+        "Devoluciones Malas ME",
+    ],
+    COLS_RENOMBRAR_PLANTILLA6_CONCAT: {
+        "Mes Nombre": "Mes",
+        "Codigo Cliente": "Cod. Cl Orig.",
+        "Venta Efectiva": "Venta Contado",
+        "Devoluciones Malas ME": "Dev. Malas",
+    },
+    COLS_AGRUP_PLANTILLA_6_TD_ED_D_M : [
+    "Cod. Cl Orig.",
+    "Mes",
+    "Cod. Cl",
+    "N.I.F.",
+    "Razon Social",
+    "Nombre Comercial",
+    "Cod. JV",
+    "Jefe de Ventas",
+    "Cod. RV",
+    "Vendedor",
+    "Cod. OV",
+    "Oficina de Ventas",
+    "Region",
+    "Canal Est.",
+    "Sub Canal Est.",
+    "Canal Tip.",
+    "Sub Canal Tip.",
+    "Segmento",
+    "Agrupacion Clientes",
+    "Formato",
+    "Sector",
+    "Plan de Negocio",
+    "Socio",
+    "Escalas"
+],
+}
+
+#Diccionario que contiene información para modificaciones a la plantilla7.
+MODS_COLS_PLANT_7: {
+    COLS_AGRUP_P7_META_INVER: ["Mes", "Canal inv", "Cod. Cl Orig."],
+    COLS_SUM_P7: ["Meta", "Beneficio", "Meta Año", "Beneficio Año"],
+    VAL_EXCLUIR_SUBC_P7_META_INVER : {
+        "Sub Canal": ["Tiendas"]
+    },
+    VAL_MANTENER_ACUERDO_P7_META : {"columna" : "Acuerdo", "valor": "Cump. Total"},
+    VAL_EXCLUIR_ACUERTO_P7_INV: {"columna": "Acuerdo", "valor": "Bono"},
+    RENOMBRAR_COLS_P7: {
+        "Mes": "Mes",
+        "Sub Canal": "Canal inv",
+        "Cod. Cl": "Cod. Cl Orig.",
+        "Inversion": "Beneficio",
+        "Cod. Cl Loc.": "Cod. Loc.",
+    },
+    RENOMBRAR_MESES_P7 : {
+      "ENE" : "Ene",
+      "FEB" : "Feb",
+      "MAR" : "Mar",
+      "ABR" : "Abr",
+      "MAY" : "May",
+      "JUN" : "Jun", 
+      "JUL" : "Jul",
+      "AGO" : "Ago",
+      "SEP" : "Sep", 
+      "OCT" : "Oct",
+      "NOV" : "Nov", 
+      "DIC" : "Dic"
+    },
+    RENOMBRAR_COLS_AÑO_P7: {"Meta" : "Meta Año", "Beneficio": "Beneficio Año"},
+    ORDEN_COLS_P7: [
+        "Mes",
+        "Canal inv",
+        "Cod. Loc.",
+        "Cod. Cl Orig.",
+        "Meta",
+        "Beneficio",
+    ],
+    ORDEN_COLS_P7_AÑO: [
+        "Mes",
+        "Canal inv",
+        "Cod. Loc.",
+        "Cod. Cl Orig.",
+        "Meta Año",
+        "Beneficio Año",
+    ],
+    MAPEO_MET_BEN_ANUAL: {
+        "Ene": 0,
+        "Feb": 0,
+        "Mar": 0,
+        "Abr": 0,
+        "May": 0,
+        "Jun": 0,
+        "Jul": 0,
+        "Ago": 0,
+        "Sep": 0,
+        "Oct": 0,
+        "Nov": 0,
+        "Dic": 0,
+        "Trim": 0,
+    },
+}
+
+Dict_columnas_bo:  
+  {
+      "Mes": "Mes Orig.",
+      "Cod. Localizador x Org - Clave": "Cod. Loc.",
+      "Cliente - Clave": "Cod. Cl Orig.",
+      "Oficina de ventas - Clave": "Cod. OV",
+      "Oficina de ventas - Texto": "Oficina de Ventas",
+      "Canal Vend. Cod. Localizador": "Cn Est. Loc.",
+      "Sub Canal Vend. Cod. Localizador": "Scn Est. Loc.",
+      "Canal Cod. Localizador": "Cn Tip. Loc.",
+      "Sub Canal Cod. Localizador": "Scn Tip. Loc.",
+      "Tipologia Cod. Localizador": "Tip Loc.",
+      "N.I.F Cod. Localizador": "N.I.F Loc.",
+      "Cod. Localizador x Org - Texto": "Razon Social Loc.",
+      "Nombre Comercial Cod. Localizador": "Nombre Comercial Loc.",
+      "Jefe Vtas Vend Cod. Localizador - Clave": "Cod. JV Loc.",
+      "Jefe Vtas Vend Cod. Localizador - Texto de longitud media": "Jefe de Ventas Loc.",
+      "Canal Vendedor Dinamico - Texto": "Cn Est. Orig.",
+      "Sub Canal Vendedor Dinamico - Texto": "Scn Est. Orig.",
+      "Canal Distribucion / Segmento 1 - Texto": "Cn Tip. Orig.",
+      "Sub Canal / Segmento 2 - Texto": "Scn Tip. Orig.",
+      "Tipologia / Segmento 3 - Texto": "Tip. Orig.",
+      "Agrupacion Clientes": "Agrupacion Clientes Orig.",
+      "Formato": "Formato Orig.",
+      "Cliente - N.I.F 1 (Clave)": "N.I.F Orig.",
+      "Cliente - Texto": "Razon Social Orig.",
+      "Nombre Comercial": "Nombre Comercial Orig.",
+      "Jefe de Ventas Vendedor Dinamico - Clave": "Cod. JV Orig.",
+      "Jefe de Ventas Vendedor Dinamico - Texto de longitud media": "Jefe de Ventas Original",
+      "Sector": "Sector",
+      "Venta Neta Acum Ano Anterior $": "Venta $$ Ant.",
+      "Venta Neta Acum Ano Actual $": "Venta $$ Act.",
+      "Ppto Neto Acum Ano Actual $": "Ppto $$",
+      "Descuentos Acum Ano Actual $": "Dcto Act.",
+      "Descuentos Ppto Acum Ano Actual $": "Ppto Dcto",
+      "Dcto Pie Factura Acum Ano Anterior $": "Dcto P.F. Ant.",
+      "Dcto Pie Factura Acum Ano Actual $": "Dcto P.F. Act.",
+      "Dcto Condicionados Acum Ano Anterior $": "Dcto Cond. Ant.",
+      "Dcto Condicionados Acum Ano Actual $": "Dcto Cond. Act.",
+      "Dcto Mercadeo Acum Ano Anterior $": "Dcto Merc. Ant.",
+      "Dcto Mercadeo Acum Ano Actual $": "Dcto Merc. Act.",
+      "Dcto Rappel x Cliente Acum Ano Anterior $": "Dcto Rap. Ant.",
+      "Dcto Rappel x Cliente Acum Ano Actual $": "Dcto Rap. Act.",
+  }
+
+#Reemplazar Canal Est. GC por cadenas dic.
+dict_cn_tip_gc: {"Grandes Cadenas" : "Cadenas"}
+
+#Reemplazar SubCanal Est. Tiendas, Droguerias por Directa. 
+dict_subcn_tip_ti_dro: {"Tiendas" : "Directa", "Droguerias" : "Directa" }
+
+#Diccioanario que me guarda las columnas especificas de la plantilla 2, a la cuales se les hace un tratamiento de datos nulos especifico.
+cols_fillna_plantilla1:
+  td_datos_cliente:
+   "Dcto Ant." : 0
+   "Agrupacion Clientes" : "-"
+   "Formato": "-"
+   "Cod. JV" : "#"
+   "Cod. RV" : "#"
+   "Canal Est." : "Sin asignar"              
+   "Sub Canal Est." : "Sin asignar"       
+   "Canal Tip." : "Sin asignar"          
+   "Sub Canal Tip." : "Sin asignar"     
+   "Segmento" : "Sin asignar"              
+   "Jefe de Ventas" : "Sin asignar"
+   "Vendedor" : "Sin asignar"
+   "Plan de Negocio" : "No"
+   "Socio" : "No"
+   "Escalas" : "No"
+  td_vtas_dtos:
+   "Agrupacion Clientes" : "-"
+   "Formato": "-"
+   "Cod. JV" : "#"
+   "Cod. RV" : "#"
+   "Jefe de Ventas" : "Sin asignar"
+   "Vendedor" : "Sin asignar"
+   "Plan de Negocio" : "No"
+   "Socio" : "No"
+   "Escalas" : "No"
+   "Venta $$ Ant.": 0
+   "Venta $$ Act.": 0
+   "Ppto $$": 0
+   "Dcto Ant.": 0
+   "Dcto Act.": 0
+   "Ppto Dcto": 0
+   "Dcto P.F. Ant." : 0
+   "Dcto P.F. Act." : 0
+   "Dcto Cond. Ant.": 0
+   "Dcto Cond. Act.": 0
+   "Dcto Merc. Ant.": 0
+   "Dcto Merc. Act.": 0
+   "Dcto Rap. Ant." : 0
+   "Dcto Rap. Act." : 0
+
+cols_fillna_plantillas:
+  cols_fillna_plantilla2:
+    cols_sin_Asig:
+      - "Oficina de Ventas"
+      - "Region"
+      - "Canal Est."
+      - "Sub Canal Est."
+      - "Vendedor"
+      - "Jefe de Ventas"
+    cols_numeral:
+      - "Cod. RV"
+      - "Cod. OV"
+    cols_guion:
+      - "Agrupacion Clientes"
+      - "Formato"
+    cols_No:
+      - "Plan de Negocio"
+      - "Socio"
+      - "Escalas"
+  cols_fillna_plantilla7:
+    cols_numeral: 
+      - "Cod. Cl"
+      - "N.I.F."
+      - "Razon Social"
+      - "Nombre Comercial"
+      - "Cod. JV"
+      - "Jefe de Ventas"
+      - "Cod. RV"
+      - "Vendedor"
+      - "Cod. OV"
+      - "Oficina de Ventas"
+      - "Region"
+      - "Canal Est."
+      - "Sub Canal Est."
+      - "Canal Tip."
+      - "Sub Canal Tip."
+      - "Segmento"
+      - "Agrupacion Clientes"
+      - "Formato"
+      - "Plan de Negocio"
+      - "Socio"
+      - "Escalas"
+
+dict_meses: {
+  "Ene" : "01",
+  "Feb" : "02",
+  "Mar" : "03",
+  "Abr" : "04",
+  "May" : "05",
+  "Jun" : "06",
+  "Jul" : "07",
+  "Ago" : "08",
+  "Sep" : "09",
+  "Oct" : "10",
+  "Nov" : "11",
+  "Dic" : "12",
+}
+
+
+#Nombres de las plantillas.
+Plantillas :  
+  Plantilla1 : 
+    noms : ["TD - Datos Cliente", "TD - Vtas Dctos_plant_1"]
+    cols: [22, 37]
+  Plantilla2 : 
+    noms: ["TD - Consolidado", "TD - Gastos Def", "HistoricoBDGastos", BD_Clientes_Mes_Ant]
+    cols: [10, 32, 23]
+  Plantilla3 : 
+    noms: ["BD - Notas Credito", "TD - Notas Credito"]
+    cols: [29, 33]
+  Plantilla4 : 
+    noms: ["BD Vtas y Dctos","TD Vtas y Dctos_plant_4"]
+    cols: [51,27]
+  Plantilla6 : 
+    noms: ["BD - E.D. - D.M. - Cont", "TD - E.D. - D.M. - Cont"]
+    cols: [32, 27]
+  Plantilla7 : 
+    noms: ["TD - Metas Inv", TD - Metas Inv Def]
+    cols: [7, 29]
+
+cols_basicas_plantilla_final : 
+  "Plantilla" : "-" 
+  "Mes" : "-"
+  "Cod. Cl Orig." : "-"
+  "Cod. Cl" : "-"
+  "N.I.F." : "-"
+  "Razon Social" : "-"
+  "Nombre Comercial" : "-"
+  "Cliente" : "-"
+  "Cod. JV" : "-"
+  "Jefe de Ventas" : "-"
+  "Cod. RV" : "-"
+  "Vendedor" : "-"
+  "Cod. OV" : "-"
+  "Oficina de Ventas" : "-"
+  "Region" : "-"
+  "Canal Est." : "-"
+  "Sub Canal Est." : "-"
+  "Canal Tip." : "-"
+  "Sub Canal Tip." : "-"
+  "Segmento" : "-"
+  "Agrupación Clientes" : "-"
+  "Formato" : "-"
+  "Negocio" : "-"
+  "Plan de Negocio" : "-"
+  "Socio" : "-"
+  "Escalas" : "-"
+  "Venta $$ Ant." : 0
+  "Venta $$ Act." : 0
+  "Ppto $$" : 0
+  "Dcto Ant." : 0
+  "Dcto Act." : 0
+  "Ppto Dcto" : 0
+  "Dcto P.F. Ant." : 0
+  "Dcto P.F. Act." : 0
+  "Dcto Cond. Ant." : 0
+  "Dcto Cond. Act." : 0
+  "Dcto Merc. Ant." : 0
+  "Dcto Merc. Act." : 0
+  "Dcto Rap. Ant." : 0
+  "Dcto Rap. Act." : 0
+  "OIPV + Mercaderismo" : 0
+  "PAC" : 0
+  "Reintegro Logistico" : 0
+  "Trade" : 0
+  "Ajuste en Precio" : 0
+  "Apoyo en Ventas" : 0
+  "Devoluciones" : 0
+  "Distribución" : 0
+  "Escala" : 0
+  "Evacuación Temporadas" : 0
+  "Negocios" : 0
+  "Pago Anticipado" : 0
+  "Planes de Negocio" : 0
+  "Tinteros" : 0
+  "Envío Directo" : 0
+  "Ppto PAC" : 0
+  "Ppto $$ Año" : 0
+  "Ppto Dctos Año": 0
+  "Ppto PAC Año" : 0
+  "Dev. Malas" : 0
+  "Contado" : 0
+  "Meta" : 0
+  "Beneficio" : 0
+  "Meta Año" : 0
+  "Beneficio Año" : 0
+
+
+

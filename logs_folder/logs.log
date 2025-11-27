@@ -1,0 +1,198 @@
+2024-11-05 12:14:13.305 | SUCCESS  | General_Functions:Procesar_configuracion:39 - Proceso de obtención de configuración satisfactorio
+2024-11-05 12:14:13.367 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura AFO Depuraciones.xlsx Hoja Condicionados
+2024-11-05 12:14:13.710 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de AFO Depuraciones.xlsx Hoja: Condicionados realizada con éxito
+2024-11-05 12:14:13.755 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.38829803466796875 segundos
+2024-11-05 12:14:13.770 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:13.776 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.008083343505859375 segundos
+2024-11-05 12:14:13.788 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura AFO Depuraciones.xlsx Hoja Pie Factura
+2024-11-05 12:14:14.375 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de AFO Depuraciones.xlsx Hoja: Pie Factura realizada con éxito
+2024-11-05 12:14:14.429 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.6412768363952637 segundos
+2024-11-05 12:14:14.441 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:14.447 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.006409645080566406 segundos
+2024-11-05 12:14:14.499 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura P3_Historico.xlsx Hoja P3_Historico
+2024-11-05 12:14:20.592 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de P3_Historico.xlsx Hoja: P3_Historico realizada con éxito
+2024-11-05 12:14:20.652 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 6.152734041213989 segundos
+2024-11-05 12:14:20.714 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:20.769 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.05524444580078125 segundos
+2024-11-05 12:14:20.826 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Ppto_Inversión_x_Cliente_Acum.xlsx Hoja BD - Ventas
+2024-11-05 12:14:44.175 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Ppto_Inversión_x_Cliente_Acum.xlsx Hoja: BD - Ventas realizada con éxito
+2024-11-05 12:14:44.281 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 23.45443320274353 segundos
+2024-11-05 12:14:44.338 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:44.397 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.060700416564941406 segundos
+2024-11-05 12:14:44.488 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja Envíos Directos
+2024-11-05 12:14:44.599 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja: Envíos Directos realizada con éxito
+2024-11-05 12:14:44.713 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.22445964813232422 segundos
+2024-11-05 12:14:44.774 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:44.834 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.06032752990722656 segundos
+2024-11-05 12:14:44.899 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja Contado
+2024-11-05 12:14:46.510 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja: Contado realizada con éxito
+2024-11-05 12:14:46.622 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 1.7228457927703857 segundos
+2024-11-05 12:14:46.685 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:46.746 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.06216168403625488 segundos
+2024-11-05 12:14:46.810 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja Dev. Malas
+2024-11-05 12:14:47.292 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Envios_Directos_-_Contado_-_Dev._Malas.xlsx Hoja: Dev. Malas realizada con éxito
+2024-11-05 12:14:47.354 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.5435686111450195 segundos
+2024-11-05 12:14:47.430 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:47.488 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.05808591842651367 segundos
+2024-11-05 12:14:47.567 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura TD - Datos Cliente.xlsx Hoja TD - Datos Cliente
+2024-11-05 12:14:54.059 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de TD - Datos Cliente.xlsx Hoja: TD - Datos Cliente realizada con éxito
+2024-11-05 12:14:54.116 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 6.549454212188721 segundos
+2024-11-05 12:14:54.186 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:54.277 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.091278076171875 segundos
+2024-11-05 12:14:54.368 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Drivers_usuario.xlsx Hoja Dcto_Condicionados_x_Concepto
+2024-11-05 12:14:54.471 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Drivers_usuario.xlsx Hoja: Dcto_Condicionados_x_Concepto realizada con éxito
+2024-11-05 12:14:54.617 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.2487480640411377 segundos
+2024-11-05 12:14:54.671 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:54.726 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.054216623306274414 segundos
+2024-11-05 12:14:54.785 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura Drivers_usuario.xlsx Hoja Driver dcto envio directo
+2024-11-05 12:14:54.864 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de Drivers_usuario.xlsx Hoja: Driver dcto envio directo realizada con éxito
+2024-11-05 12:14:55.396 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 0.611675500869751 segundos
+2024-11-05 12:14:55.856 | SUCCESS  | Transformation_functions:Unidecode_solo_cols_df:975 - Unidecode a las columnas del dataframe exitoso.
+2024-11-05 12:14:56.099 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Unidecode_solo_cols_df: 0.24450349807739258 segundos
+2024-11-05 12:14:56.160 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:14:56.205 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.05273842811584473 segundos
+2024-11-05 12:14:56.288 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:14:56.365 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.08275032043457031 segundos
+2024-11-05 12:14:56.452 | INFO     | Transformation_functions:Formatear_primera_letra_mayuscula:1419 - Primera letra en mayúscula aplicada a las columnas: Mes
+2024-11-05 12:14:56.503 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Formatear_primera_letra_mayuscula: 0.0619199275970459 segundos
+2024-11-05 12:14:56.568 | INFO     | Transformation_functions:Eliminar_primeras_n_filas:255 - Eliminación de filas del dataframe: 
+2024-11-05 12:14:56.634 | SUCCESS  | Transformation_functions:Eliminar_primeras_n_filas:260 - Eliminación de filas completa.
+2024-11-05 12:14:56.692 | INFO     | Transformation_functions:Eliminar_primeras_n_filas:255 - Eliminación de filas del dataframe: 
+2024-11-05 12:14:56.759 | SUCCESS  | Transformation_functions:Eliminar_primeras_n_filas:260 - Eliminación de filas completa.
+2024-11-05 12:14:56.843 | INFO     | Transformation_functions:duplicar_columna:454 - Se duplicó la columna 'Descuento sombrilla' como 'Descuento sombrilla_recortado'.
+2024-11-05 12:14:56.933 | SUCCESS  | Transformation_functions:duplicar_columna:455 - La tarea se completó correctamente.
+2024-11-05 12:14:56.993 | INFO     | Transformation_functions:Eliminar_primeros_n_caracteres:1011 - Se eliminaron los primeros 5 caracteres de la columna 'Descuento sombrilla_recortado'.
+2024-11-05 12:14:57.039 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Eliminar_primeros_n_caracteres: 0.049945831298828125 segundos
+2024-11-05 12:14:57.130 | INFO     | Transformation_functions:concatenar_columnas:1292 - Columnas 'Descuento sombrilla_recortado, Descuento concepto' concatenadas y almacenadas en 'Cod. Cp'.
+2024-11-05 12:14:57.177 | INFO     | Transformation_functions:concatenar_dataframes:92 - Inicio concatenacion de dataframes
+2024-11-05 12:14:57.225 | SUCCESS  | Transformation_functions:concatenar_dataframes:94 - se concatenaron los dataframes correctamente
+2024-11-05 12:14:57.263 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de concatenar_dataframes: 0.08603572845458984 segundos
+2024-11-05 12:14:57.344 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:14:57.412 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.08249640464782715 segundos
+2024-11-05 12:14:57.482 | INFO     | Transformation_functions:Eliminar_columnas:161 - Columnas ['Codigo'] eliminadas con éxito.
+2024-11-05 12:14:57.537 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:14:57.589 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.055420875549316406 segundos
+2024-11-05 12:14:57.654 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Año' con el valor constante '2024' al DataFrame.
+2024-11-05 12:14:57.717 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.06608128547668457 segundos
+2024-11-05 12:14:57.788 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:14:57.850 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.06774640083312988 segundos
+2024-11-05 12:14:57.923 | INFO     | Transformation_functions:concatenar_dataframes:92 - Inicio concatenacion de dataframes
+2024-11-05 12:14:57.985 | SUCCESS  | Transformation_functions:concatenar_dataframes:94 - se concatenaron los dataframes correctamente
+2024-11-05 12:14:58.037 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de concatenar_dataframes: 0.11399197578430176 segundos
+2024-11-05 12:14:58.236 | INFO     | General_Functions:exportar_a_excel:391 - Exportando a excel: P3_Historico
+2024-11-05 12:15:17.875 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Año' con el valor constante '2024' al DataFrame.
+2024-11-05 12:15:17.957 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.10661864280700684 segundos
+2024-11-05 12:15:18.119 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:18.198 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.16270112991333008 segundos
+2024-11-05 12:15:18.315 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Mes Orig.' con el valor constante 'Año' al DataFrame.
+2024-11-05 12:15:18.389 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.09826231002807617 segundos
+2024-11-05 12:15:18.582 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:18.663 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.16879010200500488 segundos
+2024-11-05 12:15:18.771 | INFO     | Transformation_functions:Agregar_columnas_constantes:581 - Se añadieron las columnas '['Cod. Mt', 'Descripcion Material', 'Venta Env. Dir.', 'Devoluciones Malas ME']' con los valores constantes '['-', '-', '0', '0']' al DataFrame.
+2024-11-05 12:15:18.839 | INFO     | Transformation_functions:Agregar_columnas_constantes:581 - Se añadieron las columnas '['Cod. Mt', 'Descripcion Material', 'Venta Env. Dir.', 'Venta Efectiva']' con los valores constantes '['-', '-', '0', '0']' al DataFrame.
+2024-11-05 12:15:18.912 | INFO     | Transformation_functions:concatenar_dataframes:92 - Inicio concatenacion de dataframes
+2024-11-05 12:15:18.992 | SUCCESS  | Transformation_functions:concatenar_dataframes:94 - se concatenaron los dataframes correctamente
+2024-11-05 12:15:19.058 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de concatenar_dataframes: 0.145338773727417 segundos
+2024-11-05 12:15:19.137 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:19.221 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.09462547302246094 segundos
+2024-11-05 12:15:19.287 | INFO     | General_Functions:Lectura_insumos_excel:71 - Inicio lectura TD - Metas Inv.xlsx Hoja TD - Metas Inv
+2024-11-05 12:15:20.517 | SUCCESS  | General_Functions:Lectura_insumos_excel:79 - Lectura de TD - Metas Inv.xlsx Hoja: TD - Metas Inv realizada con éxito
+2024-11-05 12:15:20.583 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Lectura_insumos_excel: 1.2963285446166992 segundos
+2024-11-05 12:15:20.661 | INFO     | Transformation_functions:Eliminar_filas_duplicadas_por_columnas:1480 - Filas duplicadas eliminadas basándose en las columnas: ['Cod. Cl']
+2024-11-05 12:15:20.752 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:20.803 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.08522224426269531 segundos
+2024-11-05 12:15:20.866 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:20.932 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.06931638717651367 segundos
+2024-11-05 12:15:21.043 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:21.155 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.1682910919189453 segundos
+2024-11-05 12:15:21.254 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.0062103271484375 segundos
+2024-11-05 12:15:21.336 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.001026153564453125 segundos
+2024-11-05 12:15:21.551 | SUCCESS  | Transformation_functions:pd_left_merge:834 - Proceso de merge satisfactorio
+2024-11-05 12:15:21.615 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge: 0.17827320098876953 segundos
+2024-11-05 12:15:21.779 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Sector' con el valor constante 'Compañia' al DataFrame.
+2024-11-05 12:15:21.901 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.19675993919372559 segundos
+2024-11-05 12:15:22.245 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:22.307 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.11263036727905273 segundos
+2024-11-05 12:15:22.414 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:22.486 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.07706236839294434 segundos
+2024-11-05 12:15:22.688 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:22.752 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.1799147129058838 segundos
+2024-11-05 12:15:22.864 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.002001523971557617 segundos
+2024-11-05 12:15:22.951 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.002022981643676758 segundos
+2024-11-05 12:15:23.242 | SUCCESS  | Transformation_functions:pd_left_merge:834 - Proceso de merge satisfactorio
+2024-11-05 12:15:23.350 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge: 0.25979042053222656 segundos
+2024-11-05 12:15:23.605 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Sector' con el valor constante 'Compañia' al DataFrame.
+2024-11-05 12:15:23.704 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.2521333694458008 segundos
+2024-11-05 12:15:24.030 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:24.100 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.0855722427368164 segundos
+2024-11-05 12:15:24.189 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:24.261 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.07672643661499023 segundos
+2024-11-05 12:15:24.369 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:24.429 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.07948851585388184 segundos
+2024-11-05 12:15:24.515 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.0010066032409667969 segundos
+2024-11-05 12:15:24.597 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.0010173320770263672 segundos
+2024-11-05 12:15:24.730 | SUCCESS  | Transformation_functions:pd_left_merge:834 - Proceso de merge satisfactorio
+2024-11-05 12:15:24.794 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge: 0.10110259056091309 segundos
+2024-11-05 12:15:24.969 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:25.071 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.11058831214904785 segundos
+2024-11-05 12:15:25.176 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:25.234 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.06273889541625977 segundos
+2024-11-05 12:15:25.330 | SUCCESS  | Transformation_functions:pd_left_merge_two_keys:876 - Proceso de merge satisfactorio
+2024-11-05 12:15:25.389 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge_two_keys: 0.07116222381591797 segundos
+2024-11-05 12:15:25.472 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.0 segundos
+2024-11-05 12:15:25.563 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de reemplazar_indices: 0.001007080078125 segundos
+2024-11-05 12:15:25.694 | SUCCESS  | Transformation_functions:pd_left_merge:834 - Proceso de merge satisfactorio
+2024-11-05 12:15:25.760 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge: 0.09264516830444336 segundos
+2024-11-05 12:15:25.858 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Sector' con el valor constante 'Compañia' al DataFrame.
+2024-11-05 12:15:25.938 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.09319758415222168 segundos
+2024-11-05 12:15:26.090 | INFO     | Transformation_functions:Eliminar_columnas:161 - Columnas ['Cod. Cl Orig._1'] eliminadas con éxito.
+2024-11-05 12:15:26.273 | INFO     | Transformation_functions:Eliminar_columnas:161 - Columnas ['Cod. Cl Orig._1'] eliminadas con éxito.
+2024-11-05 12:15:26.360 | INFO     | Transformation_functions:Eliminar_columnas:161 - Columnas ['Cod. Cl Orig._1'] eliminadas con éxito.
+2024-11-05 12:15:26.430 | INFO     | Transformation_functions:Eliminar_columnas:161 - Columnas ['Cod. Cl Orig._1'] eliminadas con éxito.
+2024-11-05 12:15:26.595 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Cambiar_tipo_dato_multiples_columnas: 0.09749364852905273 segundos
+2024-11-05 12:15:27.309 | INFO     | Transformation_functions:obtener_valores_unicos_sin_nulos:235 - Se obtuvieron los valores únicos de la columna Agrupacion Concepto: ['Planes de Negocio' 'Negocios' 'Distribución' 'Devoluciones'
+ 'Dcto Merc. Act.' 'Escalas' 'Apoyo en Ventas' 'Pago Anticipado'
+ 'Evacuación Temporadas' 'Sin asignar'].
+2024-11-05 12:15:27.423 | SUCCESS  | Transformation_functions:pd_left_merge:834 - Proceso de merge satisfactorio
+2024-11-05 12:15:27.468 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de pd_left_merge: 0.08060169219970703 segundos
+2024-11-05 12:15:27.584 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Cambiar_tipo_dato_multiples_columnas: 0.039348602294921875 segundos
+2024-11-05 12:15:27.664 | SUCCESS  | Transformation_functions:Renombrar_columnas_con_diccionario:282 - Proceso de renombrar columnas satisfactorio: 
+2024-11-05 12:15:27.712 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Renombrar_columnas_con_diccionario: 0.062134504318237305 segundos
+2024-11-05 12:15:27.787 | INFO     | Transformation_functions:conservar_primeros_n_caracteres:1046 - Se han conservado los primeros 3 caracteres de la serie Mes del DataFrame.
+2024-11-05 12:15:27.923 | SUCCESS  | General_Functions:extraer_sublista_hasta_elemento:241 - Sublista extraída correctamente.
+2024-11-05 12:15:28.049 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de filtrar_por_valores: 0.018347501754760742 segundos
+2024-11-05 12:15:28.124 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de filtrar_por_valores: 0.005568504333496094 segundos
+2024-11-05 12:15:28.194 | SUCCESS  | Transformation_functions:Reemplazar_columna_con_valor_constante:1606 - Columna 'Mes' reemplazada con el valor 'Acum'
+2024-11-05 12:15:28.246 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Reemplazar_columna_con_valor_constante: 0.05163979530334473 segundos
+2024-11-05 12:15:28.317 | SUCCESS  | Transformation_functions:Reemplazar_columna_con_valor_constante:1606 - Columna 'Mes' reemplazada con el valor 'Ago'
+2024-11-05 12:15:28.392 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Reemplazar_columna_con_valor_constante: 0.07544732093811035 segundos
+2024-11-05 12:15:28.473 | INFO     | Transformation_functions:concatenar_dataframes:92 - Inicio concatenacion de dataframes
+2024-11-05 12:15:28.552 | SUCCESS  | Transformation_functions:concatenar_dataframes:94 - se concatenaron los dataframes correctamente
+2024-11-05 12:15:28.617 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de concatenar_dataframes: 0.14419293403625488 segundos
+2024-11-05 12:15:28.913 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Cambiar_tipo_dato_multiples_columnas: 0.21597909927368164 segundos
+2024-11-05 12:15:29.405 | INFO     | Transformation_functions:Group_by_and_sum_cols:1514 - Agrupación y suma realizadas con éxito en las columnas.
+2024-11-05 12:15:29.478 | INFO     | Transformation_functions:Duplicar_muliples_columnas:504 - Se duplicó la columna Ppto $$ como Ppto $$ Año.
+2024-11-05 12:15:29.556 | INFO     | Transformation_functions:Duplicar_muliples_columnas:504 - Se duplicó la columna Ppto Dcto como Ppto Dctos Año.
+2024-11-05 12:15:29.644 | SUCCESS  | Transformation_functions:Duplicar_muliples_columnas:506 - La tarea se completó correctamente.
+2024-11-05 12:15:29.723 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Duplicar_muliples_columnas: 0.2464306354522705 segundos
+2024-11-05 12:15:29.828 | INFO     | Transformation_functions:Agregar_columna_constante:542 - Se añadieron la columnas 'Mes' con el valor constante 'Acum' al DataFrame.
+2024-11-05 12:15:29.906 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Agregar_columna_constante: 0.09717273712158203 segundos
+2024-11-05 12:15:30.011 | INFO     | Transformation_functions:seleccionar_columnas:1177 - Columnas filtradas: Mes, Cod. Cl Orig., Cod. Cl, N.I.F., Razon Social, Nombre Comercial, Cod. JV, Jefe de Ventas, Cod. RV, Vendedor, Cod. OV, Oficina de Ventas, Region, Canal Est., Sub Canal Est., Canal Tip., Sub Canal Tip., Segmento, Agrupacion Clientes, Formato, Negocio, Plan de Negocio, Socio, Sector, Escalas, Ppto $$ Año, Ppto Dctos Año
+2024-11-05 12:15:30.147 | INFO     | Transformation_functions:conservar_primeros_n_caracteres:1046 - Se han conservado los primeros 3 caracteres de la serie Mes del DataFrame.
+2024-11-05 12:15:30.264 | SUCCESS  | General_Functions:extraer_sublista_hasta_elemento:241 - Sublista extraída correctamente.
+2024-11-05 12:15:30.331 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de filtrar_por_valores: 0.009535551071166992 segundos
+2024-11-05 12:15:30.403 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de filtrar_por_valores: 0.0032806396484375 segundos
+2024-11-05 12:15:30.484 | SUCCESS  | Transformation_functions:Reemplazar_columna_con_valor_constante:1606 - Columna 'Mes' reemplazada con el valor 'Acum'
+2024-11-05 12:15:30.545 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Reemplazar_columna_con_valor_constante: 0.0621180534362793 segundos
+2024-11-05 12:15:30.625 | SUCCESS  | Transformation_functions:Reemplazar_columna_con_valor_constante:1606 - Columna 'Mes' reemplazada con el valor 'Ago'
+2024-11-05 12:15:30.695 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Reemplazar_columna_con_valor_constante: 0.06983709335327148 segundos
+2024-11-05 12:15:30.784 | INFO     | Transformation_functions:concatenar_dataframes:92 - Inicio concatenacion de dataframes
+2024-11-05 12:15:30.852 | SUCCESS  | Transformation_functions:concatenar_dataframes:94 - se concatenaron los dataframes correctamente
+2024-11-05 12:15:30.916 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de concatenar_dataframes: 0.1316847801208496 segundos
+2024-11-05 12:15:31.086 | INFO     | Transformation_functions:Group_by_and_sum_cols:1514 - Agrupación y suma realizadas con éxito en las columnas.
+2024-11-05 12:15:31.181 | SUCCESS  | Transformation_functions:rellenar_columnas_nulas:801 - Remplazo de datos nulos exitoso para las columnas: ['Cod. Cl', 'N.I.F.', 'Razon Social', 'Nombre Comercial', 'Cod. JV', 'Jefe de Ventas', 'Cod. RV', 'Vendedor', 'Cod. OV', 'Oficina de Ventas', 'Region', 'Canal Est.', 'Sub Canal Est.', 'Canal Tip.', 'Sub Canal Tip.', 'Segmento', 'Agrupacion Clientes', 'Formato', 'Plan de Negocio', 'Socio', 'Escalas']
+2024-11-05 12:15:31.235 | INFO     | General_Functions:exportar_a_excel:391 - Exportando a excel: TD Vtas y Dctos_plant_4
+2024-11-05 12:16:32.277 | INFO     | General_Functions:exportar_a_excel:391 - Exportando a excel: TD - Notas Credito
+2024-11-05 12:17:37.489 | INFO     | General_Functions:exportar_a_excel:391 - Exportando a excel: TD - E.D. - D.M. - Cont
+2024-11-05 12:17:45.290 | INFO     | General_Functions:exportar_a_excel:391 - Exportando a excel: TD - Metas Inv Def
+2024-11-05 12:17:54.028 | INFO     | General_Functions:wrapper:18 - Tiempo de ejecución de Proceso_Seguimiento_a_la_inversion: 220.81267046928406 segundos
